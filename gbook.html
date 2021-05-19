@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>引路者-关于</title>
+    <meta name="keywords" content="引领者,引路者" />
+    <meta name="description" content="引领者,引路者,脚本,微语,教程" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/m.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function (){
+            var oH2 = document.getElementsByTagName("h2")[0];
+            var oUl = document.getElementsByTagName("ul")[0];
+            oH2.onclick = function (){
+                var style = oUl.style;
+                style.display = style.display == "block" ? "none" : "block";
+                oH2.className = style.display == "block" ? "open" : ""
+            }
+            //载入页面gif动画
+            $(".preloaderimg").fadeOut();
+            $(".preloader").delay(200).fadeOut("slow").delay(200,function(){
+                $(this).remove();
+            });
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: "Microsoft Yahei";
+        }
+        a, a:hover { text-decoration: none; color: #333;outline:none;}
+        ul, li { list-style: none; }
+        svg{
+            fill: currentColor;
+        }
+        .mt-tabpage {
+            background-color: #fff;
+            margin-top:6px;
+        }
+        .mt-tabpage-title {
+            height: 44px;
+            font-size: 0;
+            background-color: #fff;
+            /* width: 94%; */
+            margin: auto;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .mt-tabpage-title .mt-tabpage-item {
+            display: inline-block;
+            width: 80px;/*若是只有3个tabs的话,那值就是105px,4个值是64px;*/
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .mt-tabpage-title .mt-tabpage-item:hover{
+            color: #eb4537;
+        }
+        .mt-tabpage-title .mt-tabpage-item-cur {
+            color: #eb4537;
+            font-size: 14px;
+            border-bottom: 1px solid #F85B5E;
+        }
+        .mt-tabpage-count {
+            position: relative;
+            width: 524px;/*800*/
+            height: 400px;/*200*/
+            overflow: hidden;
+        }
+        .mt-tabpage-cont__wrap {
+            position: absolute;
+        }
+        .mt-tabpage-count .mt-tabpage-item {
+            width: 524px;/*800*/
+            /*height: 400px;*//*200*/
+            /*line-height: 400px;*//*200*/
+            /* text-align: center; */
+        }
+    </style>
+</head>
+<body>
+<!--载入页面gif动画-->
+<div class="preloader">
+    <div class="preloaderimg"></div>
+</div>
+<header>
+    <div class="tophead">
+        <div class="logo"><a href="javascript:;">引路者</a></div>
+        <div id="mnav">
+            <h2><span class="navicon" title="导航"></span></h2>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">服务</a></li>
+                <li><a href="share.html">脚本</a></li>
+                <li><a href="list.html">教程</a></li>
+                <li><a href="info.html">博客</a></li>
+                <li><a href="weiyu.html">微语</a></li>
+                <li><a href="gbook.html">关于</a></li>
+            </ul>
+        </div>
+        <nav class="topnav" id="topnav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">服务</a></li>
+                <li><a href="share.html">脚本</a></li>
+                <li><a href="list.html">教程</a></li>
+                <li><a href="info.html">博客</a></li>
+                <li><a href="weiyu.html">微语</a></li>
+                <li><a href="gbook.html">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<article>
+    <h1 class="t_nav"><span>像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span><!--<a href="javascript:;" class="n1">网站首页</a>--><a href="javascript:;" class="n2">注册</a></h1>
+    <div class="ab_box">
+        <div class="leftbox">
+            <div class="mt-tabpage" js-tab="2">
+                <div class="mt-tabpage-title">
+                    <a href="javascript:;" class="mt-tabpage-item mt-tabpage-item-cur">账号注册</a>
+                    <a href="javascript:;" class="mt-tabpage-item">邮箱注册</a>
+                    <a href="javascript:;" class="mt-tabpage-item">QQ 注册</a>
+                    <!--<a href="javascript:;" class="mt-tabpage-item">微信注册</a>-->
+                </div>
+                <div class="mt-tabpage-count">
+                    <ul class="mt-tabpage-cont__wrap">
+                        <li class="mt-tabpage-item">
+                            <div>
+                                <span style="font-size:12px;">用户名：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <label><input type="text" name="username" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:240px;"/></label>
+                            </div>
+                            <div style="margin:10px 0px;">
+                                <span style="font-size:12px;">登录密码：</span>
+                                <label><input type="text" name="password" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:240px;"/></label>
+                            </div>
+                            <div style="margin:10px 0px;">
+                                <span style="font-size:12px;">确认密码：</span>
+                                <label><input type="text" name="password" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:240px;"/></label>
+                            </div>
+                            <div>
+                                <span style="font-size:12px;">验证码：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <label><input type="text" name="username" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:240px;"/></label>
+                            </div>
+                        </li>
+                        <li class="mt-tabpage-item">邮箱注册</li>
+                        <li class="mt-tabpage-item">QQ 注册</li>
+                        <!--<li class="mt-tabpage-item">微信注册</li>-->
+                    </ul>
+                </div>
+            </div>
+            <!--<div>
+                <div>
+                    <span>用户名：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <label><input type="text" name="username" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:72%;"/></label>
+                </div>
+                <div style="margin:10px 0px;">
+                    <span>登录密码：</span>
+                    <label><input type="text" name="password" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:72%;"/></label>
+                </div>
+                <div style="margin:10px 0px;">
+                    <span>确认密码：</span>
+                    <label><input type="text" name="password" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:72%;"/></label>
+                </div>
+                <div>
+                    <span>验证码：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <label><input type="text" name="username" class="width" style="padding-left:4px;height:30px;line-height:30px;vertical-align:center;width:72%;"/></label>
+                </div>
+            </div>-->
+        </div>
+        <div class="rightbox">
+            <div class="aboutme">
+                <h2 class="hometitle">关于我</h2>
+                <div class="avatar"> <img src="images/avatar.jpg"> </div>
+                <div class="ab_con">
+                    <p>网名：dancesmile | 杨青</p>
+                    <p>职业：Web前端设计师、网页设计 </p>
+                    <p>个人微信：yangqq_1987</p>
+                    <p>邮箱：dancesmiling@qq.com</p>
+                </div>
+            </div>
+            <div class="weixin">
+                <h2 class="hometitle">微信关注</h2>
+                <ul>
+                    <img src="images/wx.jpg">
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+<footer>
+    <p>版权 <a href="/">引路者博客</a> <a href="/">黔ICP备14005277号-3</a></p>
+</footer>
+<script src="js/nav.js"></script>
+<script src="js/mt-tabpage.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('[js-tab=2]').tab({
+            curDisplay: 1,
+            changeMethod: 'horizontal'
+        });
+    });
+</script>
+</body>
+</html>
